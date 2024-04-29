@@ -1,0 +1,24 @@
+uuid: 4b17edb7-e4db-4d0d-9dfe-82966becab22
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.perguntas.field_id_pergunta
+    - field.field.node.perguntas.field_respostas
+    - node.type.perguntas
+  module:
+    - user
+id: node.perguntas.teaser
+targetEntityType: node
+bundle: perguntas
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_id_pergunta: true
+  field_respostas: true

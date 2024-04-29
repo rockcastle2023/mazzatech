@@ -1,0 +1,42 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+ .respGeral .itemResp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ }
+
+ .respGeral .lettterResp{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    margin-right: 10px;
+    padding: 0 20px;
+    border-right: 1px solid #e7e7e7;
+ }
+.respGeral .respostas {
+    padding: 20px;
+ }
+
+ .respGeral .itemResp:hover, .respGeral .itemResp.active{
+    background-color: #f3f3f3;
+    cursor: pointer;
+ }
+ .respGeral .itemResp .content{
+    
+ }
+ .field--name-field-contagem-votos{
+    width: 150px;
+    float: right;
+    text-align: center;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+ }

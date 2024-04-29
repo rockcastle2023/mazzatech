@@ -1,0 +1,25 @@
+uuid: 59a733b6-30ff-4c0b-a2c2-bcf5e174e4a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_pergunta
+    - node.type.perguntas
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: true
+    unique_text: 'Este ID de Pergunta já está sendo utilizado por outro conteúdo.'
+id: node.perguntas.field_id_pergunta
+field_name: field_id_pergunta
+entity_type: node
+bundle: perguntas
+label: 'ID Pergunta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,54 @@
+uuid: a135fa49-f331-4a64-a99a-f3389665ddf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.respostas.field_contagem_votos
+    - field.field.node.respostas.field_descricao
+    - field.field.node.respostas.field_imagem
+    - image.style.medium
+    - node.type.respostas
+  module:
+    - image
+    - text
+    - user
+id: node.respostas.default
+targetEntityType: node
+bundle: respostas
+mode: default
+content:
+  field_contagem_votos:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_descricao:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagem:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  rate_votacao: true
+  rate_voto_1: true

@@ -1,0 +1,7 @@
+test_vote.receive_post:
+  path: '/test-vote/receive'
+  methods: [POST]
+  defaults:
+    _controller: '\Drupal\test_vote\Controller\TestVoteController::handlePost'
+  requirements:
+    _permission: 'access content'

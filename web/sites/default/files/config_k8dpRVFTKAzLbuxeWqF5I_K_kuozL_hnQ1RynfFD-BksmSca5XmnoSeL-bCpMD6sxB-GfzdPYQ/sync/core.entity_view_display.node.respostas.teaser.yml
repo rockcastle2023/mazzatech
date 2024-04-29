@@ -1,0 +1,26 @@
+uuid: 7597ea4a-f22e-4cb9-8c82-cbb985b7bc1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.respostas.field_contagem_votos
+    - field.field.node.respostas.field_descricao
+    - field.field.node.respostas.field_imagem
+    - node.type.respostas
+  module:
+    - user
+id: node.respostas.teaser
+targetEntityType: node
+bundle: respostas
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contagem_votos: true
+  field_descricao: true
+  field_imagem: true

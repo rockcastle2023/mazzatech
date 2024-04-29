@@ -1,0 +1,8 @@
+uuid: b0afe35d-65a1-494c-be4f-3b4c1f3c201a
+langcode: en
+status: true
+dependencies: {  }
+id: voto
+label: Voto
+value_type: points
+description: 'teste 1'

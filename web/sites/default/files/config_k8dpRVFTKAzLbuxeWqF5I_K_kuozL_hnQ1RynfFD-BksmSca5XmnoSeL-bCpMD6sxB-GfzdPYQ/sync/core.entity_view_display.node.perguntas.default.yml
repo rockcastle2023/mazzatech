@@ -1,0 +1,38 @@
+uuid: 85bfc9d8-8330-46df-bcb3-572dfb1b4313
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.perguntas.field_id_pergunta
+    - field.field.node.perguntas.field_respostas
+    - node.type.perguntas
+  module:
+    - user
+id: node.perguntas.default
+targetEntityType: node
+bundle: perguntas
+mode: default
+content:
+  field_id_pergunta:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_respostas:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,5 @@
+name: 'Test Vote'
+type: module
+description: 'Controla sistema de votação'
+core_version_requirement: ^10
+package: Custom

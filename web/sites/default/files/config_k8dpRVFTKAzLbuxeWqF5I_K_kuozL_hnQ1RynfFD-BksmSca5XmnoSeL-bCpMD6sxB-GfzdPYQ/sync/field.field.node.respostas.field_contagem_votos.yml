@@ -1,0 +1,29 @@
+uuid: 85eebe91-20f7-46c8-9c1f-40941b0348cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contagem_votos
+    - node.type.respostas
+  module:
+    - unique_content_field_validation
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+id: node.respostas.field_contagem_votos
+field_name: field_contagem_votos
+entity_type: node
+bundle: respostas
+label: 'Contagem Votos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

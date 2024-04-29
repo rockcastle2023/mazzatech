@@ -1,0 +1,4 @@
+name: test-vote
+recipe: drupal10
+config:
+  webroot: web

@@ -1,0 +1,50 @@
+uuid: 09bec812-2641-418b-b45c-df44633b813c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.respostas.field_contagem_votos
+    - field.field.node.respostas.field_descricao
+    - field.field.node.respostas.field_imagem
+    - image.style.thumbnail
+    - node.type.respostas
+  module:
+    - image
+    - text
+id: node.respostas.default
+targetEntityType: node
+bundle: respostas
+mode: default
+content:
+  field_descricao:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_imagem:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_contagem_votos: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
